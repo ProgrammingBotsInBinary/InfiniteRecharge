@@ -262,9 +262,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
         View v = getView();
         switch (view.getId()){
             case R.id.plusButton_success_lvl1:
-                teleop_success_lvl1++;
-                TextView teleopsuccessincrementlvl1 = (TextView) v.findViewById(R.id.textview_success_lvl1);
-                teleopsuccessincrementlvl1.setText(Integer.toString(teleop_success_lvl1));
+                if(teleop_success_lvl1 < 60){
+                    teleop_success_lvl1++;
+                    TextView teleopsuccessincrementlvl1 = (TextView) v.findViewById(R.id.textview_success_lvl1);
+                    teleopsuccessincrementlvl1.setText(Integer.toString(teleop_success_lvl1));
+                }
                 break;
             case R.id.minusButton_success_lvl1:
                 if(teleop_success_lvl1 > 0){
@@ -274,9 +276,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
                 }
                 break;
             case R.id.plusButton_fail_lvl1:
-                teleop_fail_lvl1++;
-                TextView teleopfailincrementlvl1 = (TextView) v.findViewById(R.id.textview_fail_lvl1);
-                teleopfailincrementlvl1.setText(Integer.toString(teleop_fail_lvl1));
+                if(teleop_fail_lvl1 < 60){
+                    teleop_fail_lvl1++;
+                    TextView teleopfailincrementlvl1 = (TextView) v.findViewById(R.id.textview_fail_lvl1);
+                    teleopfailincrementlvl1.setText(Integer.toString(teleop_fail_lvl1));
+                }
                 break;
             case R.id.minusButton_fail_lvl1:
                 if(teleop_fail_lvl1 > 0){
@@ -286,9 +290,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
                 }
                 break;
             case R.id.plusButton_success_lvl2:
-                teleop_success_lvl2++;
-                TextView teleopsuccessincrementlvl2 = (TextView) v.findViewById(R.id.textview_success_lvl2);
-                teleopsuccessincrementlvl2.setText(Integer.toString(teleop_success_lvl2));
+                if(teleop_success_lvl2 < 60){
+                    teleop_success_lvl2++;
+                    TextView teleopsuccessincrementlvl2 = (TextView) v.findViewById(R.id.textview_success_lvl2);
+                    teleopsuccessincrementlvl2.setText(Integer.toString(teleop_success_lvl2));
+                }
                 break;
             case R.id.minusButton_success_lvl2:
                 if(teleop_success_lvl2 > 0){
@@ -298,9 +304,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
                 }
                 break;
             case R.id.plusButton_fail_lvl2:
-                teleop_fail_lvl2++;
-                TextView teleopfailincrementlvl2 = (TextView) v.findViewById(R.id.textview_fail_lvl2);
-                teleopfailincrementlvl2.setText(Integer.toString(teleop_fail_lvl2));
+                if(teleop_fail_lvl2 < 60){
+                    teleop_fail_lvl2++;
+                    TextView teleopfailincrementlvl2 = (TextView) v.findViewById(R.id.textview_fail_lvl2);
+                    teleopfailincrementlvl2.setText(Integer.toString(teleop_fail_lvl2));
+                }
                 break;
             case R.id.minusButton_fail_lvl2:
                 if(teleop_fail_lvl2 > 0){
@@ -310,9 +318,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
                 }
                 break;
             case R.id.plusButton_success_lvl3:
-                teleop_success_lvl3++;
-                TextView tsilvl3 = (TextView) v.findViewById(R.id.textview_success_lvl3);
-                tsilvl3.setText(Integer.toString(teleop_success_lvl3));
+                if(teleop_success_lvl3 < 60){
+                    teleop_success_lvl3++;
+                    TextView tsilvl3 = (TextView) v.findViewById(R.id.textview_success_lvl3);
+                    tsilvl3.setText(Integer.toString(teleop_success_lvl3));
+                }
                 break;
             case R.id.minusButton_success_lvl3:
                 if(teleop_success_lvl3 > 0){
@@ -322,9 +332,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
                 }
                 break;
             case R.id.plusButton_fail_lvl3:
-                teleop_fail_lvl3++;
-                TextView tfilvl3 = (TextView) v.findViewById(R.id.textview_fail_lvl3);
-                tfilvl3.setText(Integer.toString(teleop_fail_lvl3));
+                if(teleop_fail_lvl3 < 60){
+                    teleop_fail_lvl3++;
+                    TextView tfilvl3 = (TextView) v.findViewById(R.id.textview_fail_lvl3);
+                    tfilvl3.setText(Integer.toString(teleop_fail_lvl3));
+                }
                 break;
             case R.id.minusButton_fail_lvl3:
                 if(teleop_fail_lvl3 > 0){

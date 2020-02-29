@@ -178,9 +178,11 @@ public class AutonFragment extends Fragment implements View.OnClickListener {
         View v = getView();
         switch(view.getId()){
             case R.id.plusButton_lvl1:
-                auton_lvl1++;
-                TextView autonincrement = (TextView) v.findViewById(R.id.textview_lvl1);
-                autonincrement.setText(Integer.toString(auton_lvl1));
+                if(auton_lvl1 < 20){
+                    auton_lvl1++;
+                    TextView autonincrement = (TextView) v.findViewById(R.id.textview_lvl1);
+                    autonincrement.setText(Integer.toString(auton_lvl1));
+                }
                 break;
             case R.id.minusButton_lvl1:
                 if(auton_lvl1 > 0){

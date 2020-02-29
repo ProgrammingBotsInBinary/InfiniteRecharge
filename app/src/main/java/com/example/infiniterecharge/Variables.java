@@ -27,8 +27,6 @@ public class Variables {
 
     public static int state = -1;
 
-    public static int trench_run = 0;
-    public static int floor_pickup = 0;
     public static String input = "";
 
     public static final String Col0 = "id";
@@ -41,7 +39,7 @@ public class Variables {
     public static final String Col7 = "auton_position";
     public static final String Col8 = "teleop_success_lvl1";
     public static final String Col9 = "teleop_success_lvl2";
-    public static final String Col10 = "telep_success_lvl3";
+    public static final String Col10 = "teleop_success_lvl3";
     public static final String Col11 = "teleop_fail_lvl1";
     public static final String Col12 = "teleop_fail_lvl2";
     public static final String Col13 = "teleop_fail_lvl3";
