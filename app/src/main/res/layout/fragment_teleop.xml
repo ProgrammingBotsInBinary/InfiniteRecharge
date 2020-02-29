@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/sendactivity_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.9" />
+
+    <TextView
+        android:id="@+id/header_teleop_lvl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lower Port"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/header_teleop_lvl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Outer Port"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minusButton_success_lvl1"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/header_teleop_lvl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Inner Port"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.13"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/minusButton_success_lvl2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sf_lvl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Success/Fail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/header_teleop_lvl1"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/header_teleop_lvl1"
+        app:layout_constraintTop_toBottomOf="@id/header_teleop_lvl1"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+    <TextView
+        android:id="@+id/sf_lvl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Success/Fail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/header_teleop_lvl2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/header_teleop_lvl2"
+        app:layout_constraintTop_toBottomOf="@id/header_teleop_lvl2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/sf_lvl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Success/Fail"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/header_teleop_lvl3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/header_teleop_lvl3"
+        app:layout_constraintTop_toBottomOf="@id/header_teleop_lvl3"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+    <Button
+        android:id="@+id/plusButton_success_lvl1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="+"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/textview_success_lvl1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sf_lvl1"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintVertical_bias=".0"
+        />
+
+    <Button
+        android:id="@+id/minusButton_success_lvl1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_success_lvl1"
+        />
+
+    <TextView
+        android:id="@+id/textview_success_lvl1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/minusButton_success_lvl1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plusButton_success_lvl1" />
+
+    <Button
+        android:id="@+id/plusButton_fail_lvl1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="+"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/textview_fail_lvl1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sf_lvl1"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <TextView
+        android:id="@+id/textview_fail_lvl1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/minusButton_fail_lvl1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plusButton_fail_lvl1"
+        app:layout_constraintVertical_bias="0.214" />
+
+    <Button
+        android:id="@+id/minusButton_fail_lvl1"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_fail_lvl1"
+        app:layout_constraintVertical_bias="0.279" />
+
+    <Button
+        android:id="@+id/plusButton_success_lvl2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="+"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/textview_success_lvl2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sf_lvl2"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <TextView
+        android:id="@+id/textview_success_lvl2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/minusButton_success_lvl2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plusButton_success_lvl2"
+        app:layout_constraintVertical_bias="0.476" />
+
+    <Button
+        android:id="@+id/minusButton_success_lvl2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textview_success_lvl2"
+        app:layout_constraintVertical_bias="0.041" />
+
+    <Button
+        android:id="@+id/plusButton_fail_lvl2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="+"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/textview_fail_lvl2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sf_lvl2"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/textview_fail_lvl2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/minusButton_fail_lvl2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plusButton_fail_lvl2"
+        app:layout_constraintVertical_bias="0.495" />
+
+    <Button
+        android:id="@+id/minusButton_fail_lvl2"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_fail_lvl2"
+        app:layout_constraintVertical_bias="0.564" />
+
+    <Button
+        android:id="@+id/plusButton_success_lvl3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="+"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/textview_success_lvl3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sf_lvl3"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <TextView
+        android:id="@+id/textview_success_lvl3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/minusButton_success_lvl3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plusButton_success_lvl3"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <Button
+        android:id="@+id/minusButton_success_lvl3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_success_lvl3"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <Button
+        android:id="@+id/plusButton_fail_lvl3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="+"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@id/textview_fail_lvl3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/sf_lvl3"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintVertical_chainStyle="packed"
+        />
+
+    <TextView
+        android:id="@+id/textview_fail_lvl3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toTopOf="@id/minusButton_fail_lvl3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/plusButton_fail_lvl3"
+        app:layout_constraintVertical_bias="0.664" />
+
+    <Button
+        android:id="@+id/minusButton_fail_lvl3"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="-"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textview_fail_lvl3"
+        app:layout_constraintVertical_bias="0.73" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_rotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/header_rotation"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/header_rotation"
+        app:layout_constraintTop_toBottomOf="@id/header_rotation"
+        app:layout_constraintVertical_bias="0.0"
+        >
+
+        <RadioButton
+            android:id="@+id/rotation_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/rotation_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/header_rotation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rotation Control?"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.02" />
+
+    <TextView
+        android:id="@+id/header_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Position Control?"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/rotationtime_textview"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/header_position"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/header_position"
+        app:layout_constraintTop_toBottomOf="@id/header_position"
+        app:layout_constraintVertical_bias="0.0"
+        >
+
+        <RadioButton
+            android:id="@+id/position_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/position_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/header_endgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Endgame"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.67"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/position_time_textview"
+        app:layout_constraintVertical_bias="0.0"
+        />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_endgame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/header_endgame"
+        app:layout_constraintStart_toStartOf="@id/header_endgame"
+        app:layout_constraintTop_toBottomOf="@id/header_endgame"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias=".1"
+        >
+
+        <RadioButton
+            android:id="@+id/endgame_hang"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hang" />
+
+        <RadioButton
+            android:id="@+id/endgame_park"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Park" />
+
+        <RadioButton
+            android:id="@+id/endgame_neither"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Neither" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/rotate_time_decrease"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rotationtime_textview"
+        app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintStart_toStartOf="@id/rotation_time_header"
+        app:layout_constraintTop_toBottomOf="@id/rotation_time_header"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        />
+
+    <TextView
+        android:id="@+id/rotationtime_textview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/rotation_time_increase"
+        app:layout_constraintHorizontal_bias="0.747"
+        app:layout_constraintStart_toEndOf="@id/rotate_time_decrease"
+        app:layout_constraintTop_toBottomOf="@id/rotation_time_header"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/rotation_time_increase"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/rotation_time_header"
+        app:layout_constraintHorizontal_bias="0.927"
+        app:layout_constraintStart_toEndOf="@id/rotationtime_textview"
+        app:layout_constraintTop_toBottomOf="@id/rotation_time_header"
+        app:layout_constraintVertical_bias="0.0"/>
+
+    <Button
+        android:id="@+id/position_time_decrease"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/position_time_textview"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="@id/position_time_header"
+        app:layout_constraintTop_toBottomOf="@id/position_time_header"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"/>
+
+    <TextView
+        android:id="@+id/position_time_textview"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="0"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/position_time_increment"
+        app:layout_constraintHorizontal_bias="0.745"
+        app:layout_constraintStart_toEndOf="@id/position_time_decrease"
+        app:layout_constraintTop_toBottomOf="@id/position_time_header"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/position_time_increment"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/position_time_header"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toEndOf="@id/position_time_textview"
+        app:layout_constraintTop_toBottomOf="@id/position_time_header"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/rotation_time_header"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="Est. Time"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/header_rotation"
+        app:layout_constraintHorizontal_bias="0.806"
+        app:layout_constraintStart_toEndOf="@id/radiogroup_rotation"
+        app:layout_constraintTop_toBottomOf="@id/header_rotation"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/position_time_header"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:text="Est. Time"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/header_position"
+        app:layout_constraintStart_toEndOf="@id/radiogroup_position"
+        app:layout_constraintTop_toBottomOf="@id/header_position"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintVertical_bias="0.0"/>
+    <TextView
+        android:id="@+id/header_cycles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Number of Cycles"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.9"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup_endgame"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/cycles_decrease_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="-"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cycles_textview"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@id/header_cycles"
+        app:layout_constraintTop_toBottomOf="@id/header_cycles"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        />
+
+    <TextView
+        android:id="@+id/cycles_textview"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="0"
+        android:textSize="30sp"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/cycles_increase_button"
+        app:layout_constraintHorizontal_bias="0.675"
+        app:layout_constraintStart_toEndOf="@id/cycles_decrease_button"
+        app:layout_constraintTop_toBottomOf="@id/header_cycles"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/cycles_increase_button"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:text="+"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/header_cycles"
+        app:layout_constraintHorizontal_bias="0.841"
+        app:layout_constraintStart_toEndOf="@id/cycles_textview"
+        app:layout_constraintTop_toBottomOf="@id/header_cycles"
+        app:layout_constraintVertical_bias="0.0" />
+    <TextView
+        android:id="@+id/header_played_defense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Played Defense?"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.81"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cycles_textview"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_defenseplayed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/header_played_defense"
+        app:layout_constraintStart_toStartOf="@id/header_played_defense"
+        app:layout_constraintTop_toBottomOf="@id/header_played_defense"
+        app:layout_constraintVertical_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.1"
+        >
+
+        <RadioButton
+            android:id="@+id/defense_played_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/defense_played_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/header_defended"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Was defense played on them?"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.94"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radiogroup_defenseplayed"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/radiogroup_defended"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/header_defended"
+        app:layout_constraintStart_toStartOf="@id/header_defended"
+        app:layout_constraintTop_toBottomOf="@id/header_defended"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintVertical_bias="0.0" >
+
+        <RadioButton
+            android:id="@+id/defense_played_on_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/defense_played_on_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
