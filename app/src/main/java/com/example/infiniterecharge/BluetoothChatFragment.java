@@ -134,9 +134,9 @@ public class BluetoothChatFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        mConnectButton = (Button) view.findViewById(R.id.button_connect);
-        mSendButton = (Button) view.findViewById(R.id.send_info);
-        mNewMatchButton = (Button) view.findViewById(R.id.new_match);
+        mConnectButton = view.findViewById(R.id.button_connect);
+        mSendButton = view.findViewById(R.id.send_info);
+        mNewMatchButton = view.findViewById(R.id.new_match);
 
         /**
          Creates string that is sent from client side

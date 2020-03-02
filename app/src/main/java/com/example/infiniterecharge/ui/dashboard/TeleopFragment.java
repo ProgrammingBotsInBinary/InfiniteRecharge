@@ -36,77 +36,77 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
                 ViewModelProviders.of(this).get(TeleopViewModel.class);
         View root = inflater.inflate(R.layout.fragment_teleop, container, false);
 
-        Button plusbuttonsuccesslvl1 = (Button) root.findViewById(R.id.plusButton_success_lvl1);
+        Button plusbuttonsuccesslvl1 = root.findViewById(R.id.plusButton_success_lvl1);
         plusbuttonsuccesslvl1.setOnClickListener(this);
-        Button minusbuttonsuccesslvl1 = (Button) root.findViewById(R.id.minusButton_success_lvl1);
+        Button minusbuttonsuccesslvl1 = root.findViewById(R.id.minusButton_success_lvl1);
         minusbuttonsuccesslvl1.setOnClickListener(this);
-        Button plusbuttonsuccesslvl2 = (Button) root.findViewById(R.id.plusButton_success_lvl2);
+        Button plusbuttonsuccesslvl2 = root.findViewById(R.id.plusButton_success_lvl2);
         plusbuttonsuccesslvl2.setOnClickListener(this);
-        Button minusbuttonsuccesslvl2 = (Button) root.findViewById(R.id.minusButton_success_lvl2);
+        Button minusbuttonsuccesslvl2 = root.findViewById(R.id.minusButton_success_lvl2);
         minusbuttonsuccesslvl2.setOnClickListener(this);
-        Button plusbuttonsuccesslvl3 = (Button) root.findViewById(R.id.plusButton_success_lvl3);
+        Button plusbuttonsuccesslvl3 = root.findViewById(R.id.plusButton_success_lvl3);
         plusbuttonsuccesslvl3.setOnClickListener(this);
-        Button minusbuttonsuccesslvl3 = (Button) root.findViewById(R.id.minusButton_success_lvl3);
+        Button minusbuttonsuccesslvl3 = root.findViewById(R.id.minusButton_success_lvl3);
         minusbuttonsuccesslvl3.setOnClickListener(this);
 
-        Button rotationtimedec = (Button) root.findViewById(R.id.rotate_time_decrease);
+        Button rotationtimedec = root.findViewById(R.id.rotate_time_decrease);
         rotationtimedec.setOnClickListener(this);
-        Button rotationtimeinc = (Button) root.findViewById(R.id.rotation_time_increase);
+        Button rotationtimeinc = root.findViewById(R.id.rotation_time_increase);
         rotationtimeinc.setOnClickListener(this);
-        Button positiontimedec = (Button) root.findViewById(R.id.position_time_decrease);
+        Button positiontimedec = root.findViewById(R.id.position_time_decrease);
         positiontimedec.setOnClickListener(this);
-        Button positiontimeinc = (Button) root.findViewById(R.id.position_time_increment);
+        Button positiontimeinc = root.findViewById(R.id.position_time_increment);
         positiontimeinc.setOnClickListener(this);
-        Button cyclesdec = (Button) root.findViewById(R.id.cycles_decrease_button);
+        Button cyclesdec = root.findViewById(R.id.cycles_decrease_button);
         cyclesdec.setOnClickListener(this);
-        Button cyclesinc = (Button) root.findViewById(R.id.cycles_increase_button);
+        Button cyclesinc = root.findViewById(R.id.cycles_increase_button);
         cyclesinc.setOnClickListener(this);
 
-        Button plusbuttonfaillvl1 = (Button) root.findViewById(R.id.plusButton_fail_lvl1);
+        Button plusbuttonfaillvl1 = root.findViewById(R.id.plusButton_fail_lvl1);
         plusbuttonfaillvl1.setOnClickListener(this);
-        Button minusbuttonfaillvl1 = (Button) root.findViewById(R.id.minusButton_fail_lvl1);
+        Button minusbuttonfaillvl1 = root.findViewById(R.id.minusButton_fail_lvl1);
         minusbuttonfaillvl1.setOnClickListener(this);
-        Button plusbuttonfaillvl2 = (Button) root.findViewById(R.id.plusButton_fail_lvl2);
+        Button plusbuttonfaillvl2 = root.findViewById(R.id.plusButton_fail_lvl2);
         plusbuttonfaillvl2.setOnClickListener(this);
-        Button minusbuttonfaillvl2 = (Button) root.findViewById(R.id.minusButton_fail_lvl2);
+        Button minusbuttonfaillvl2 = root.findViewById(R.id.minusButton_fail_lvl2);
         minusbuttonfaillvl2.setOnClickListener(this);
-        Button plusbuttonfaillvl3 = (Button) root.findViewById(R.id.plusButton_fail_lvl3);
+        Button plusbuttonfaillvl3 = root.findViewById(R.id.plusButton_fail_lvl3);
         plusbuttonfaillvl3.setOnClickListener(this);
-        Button minusbuttonfaillvl3 = (Button) root.findViewById(R.id.minusButton_fail_lvl3);
+        Button minusbuttonfaillvl3 = root.findViewById(R.id.minusButton_fail_lvl3);
         minusbuttonfaillvl3.setOnClickListener(this);
 
-        TextView teleopsuccesslvl1 = (TextView) root.findViewById(R.id.textview_success_lvl1);
+        TextView teleopsuccesslvl1 = root.findViewById(R.id.textview_success_lvl1);
         teleopsuccesslvl1.setText(Integer.toString(teleop_success_lvl1));
-        TextView teleopfaillvl1 = (TextView) root.findViewById(R.id.textview_fail_lvl1);
+        TextView teleopfaillvl1 = root.findViewById(R.id.textview_fail_lvl1);
         teleopfaillvl1.setText(Integer.toString(teleop_fail_lvl1));
-        TextView teleopsuccesslvl2 = (TextView) root.findViewById(R.id.textview_success_lvl2);
+        TextView teleopsuccesslvl2 = root.findViewById(R.id.textview_success_lvl2);
         teleopsuccesslvl2.setText(Integer.toString(teleop_success_lvl2));
-        TextView teleopfaillvl2 = (TextView) root.findViewById(R.id.textview_fail_lvl2);
+        TextView teleopfaillvl2 = root.findViewById(R.id.textview_fail_lvl2);
         teleopfaillvl2.setText(Integer.toString(teleop_fail_lvl2));
-        TextView teleopsuccesslvl3 = (TextView) root.findViewById(R.id.textview_success_lvl3);
+        TextView teleopsuccesslvl3 = root.findViewById(R.id.textview_success_lvl3);
         teleopsuccesslvl3.setText(Integer.toString(teleop_success_lvl3));
-        TextView teleopfaillvl3 = (TextView) root.findViewById(R.id.textview_fail_lvl3);
+        TextView teleopfaillvl3 = root.findViewById(R.id.textview_fail_lvl3);
         teleopfaillvl3.setText(Integer.toString(teleop_fail_lvl3));
-        TextView rotationtime = (TextView) root.findViewById(R.id.rotationtime_textview);
+        TextView rotationtime = root.findViewById(R.id.rotationtime_textview);
         rotationtime.setText(Integer.toString(rotation_time));
-        TextView positiontime = (TextView) root.findViewById(R.id.position_time_textview);
+        TextView positiontime = root.findViewById(R.id.position_time_textview);
         positiontime.setText(Integer.toString(position_time));
-        TextView numberofcycles = (TextView) root.findViewById(R.id.cycles_textview);
+        TextView numberofcycles = root.findViewById(R.id.cycles_textview);
         numberofcycles.setText(Integer.toString(cycles));
 
-        RadioButton rotation_yes = (RadioButton) root.findViewById(R.id.rotation_yes);
-        RadioButton rotation_no = (RadioButton) root.findViewById(R.id.rotation_no);
-        RadioButton position_yes = (RadioButton) root.findViewById(R.id.position_yes);
-        RadioButton position_no = (RadioButton) root.findViewById(R.id.position_no);
-        RadioButton endgamehang = (RadioButton) root.findViewById(R.id.endgame_hang);
-        RadioButton endgamepark = (RadioButton) root.findViewById(R.id.endgame_park);
-        RadioButton endgameneither = (RadioButton) root.findViewById(R.id.endgame_neither);
-        RadioButton playeddefenseyes = (RadioButton) root.findViewById(R.id.defense_played_yes);
-        RadioButton playeddefenseno = (RadioButton) root.findViewById(R.id.defense_played_no);
-        RadioButton defenseplayedonyes = (RadioButton) root.findViewById(R.id.defense_played_on_yes);
-        RadioButton defenseplayedonno = (RadioButton) root.findViewById(R.id.defense_played_on_no);
+        RadioButton rotation_yes = root.findViewById(R.id.rotation_yes);
+        RadioButton rotation_no = root.findViewById(R.id.rotation_no);
+        RadioButton position_yes = root.findViewById(R.id.position_yes);
+        RadioButton position_no = root.findViewById(R.id.position_no);
+        RadioButton endgamehang = root.findViewById(R.id.endgame_hang);
+        RadioButton endgamepark = root.findViewById(R.id.endgame_park);
+        RadioButton endgameneither = root.findViewById(R.id.endgame_neither);
+        RadioButton playeddefenseyes = root.findViewById(R.id.defense_played_yes);
+        RadioButton playeddefenseno = root.findViewById(R.id.defense_played_no);
+        RadioButton defenseplayedonyes = root.findViewById(R.id.defense_played_on_yes);
+        RadioButton defenseplayedonno = root.findViewById(R.id.defense_played_on_no);
 
-        Button sendactivity = (Button) root.findViewById(R.id.sendactivity_button);
+        Button sendactivity = root.findViewById(R.id.sendactivity_button);
         sendactivity.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -172,7 +172,7 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
                 endgamepark.setChecked(false);
                 break;
         }
-        RadioGroup playeddef = (RadioGroup) root.findViewById(R.id.radiogroup_defenseplayed);
+        RadioGroup playeddef = root.findViewById(R.id.radiogroup_defenseplayed);
         playeddef.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -186,7 +186,7 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
                 }
             }
         });
-        RadioGroup defplayedon = (RadioGroup) root.findViewById(R.id.radiogroup_defended);
+        RadioGroup defplayedon = root.findViewById(R.id.radiogroup_defended);
         defplayedon.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -201,7 +201,7 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
             }
         });
 
-        RadioGroup rotation = (RadioGroup) root.findViewById(R.id.radiogroup_rotation);
+        RadioGroup rotation = root.findViewById(R.id.radiogroup_rotation);
         rotation.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -215,7 +215,7 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
                 }
             }
         });
-        RadioGroup position = (RadioGroup) root.findViewById(R.id.radiogroup_position);
+        RadioGroup position = root.findViewById(R.id.radiogroup_position);
         position.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -229,7 +229,7 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
                 }
             }
         });
-        RadioGroup endgame  =(RadioGroup) root.findViewById(R.id.radiogroup_endgame);
+        RadioGroup endgame  = root.findViewById(R.id.radiogroup_endgame);
         endgame.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -264,126 +264,126 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
             case R.id.plusButton_success_lvl1:
                 if(teleop_success_lvl1 < 60){
                     teleop_success_lvl1++;
-                    TextView teleopsuccessincrementlvl1 = (TextView) v.findViewById(R.id.textview_success_lvl1);
+                    TextView teleopsuccessincrementlvl1 = v.findViewById(R.id.textview_success_lvl1);
                     teleopsuccessincrementlvl1.setText(Integer.toString(teleop_success_lvl1));
                 }
                 break;
             case R.id.minusButton_success_lvl1:
                 if(teleop_success_lvl1 > 0){
                     teleop_success_lvl1--;
-                    TextView teleopsuccessdecrementlvl1 = (TextView) v.findViewById(R.id.textview_success_lvl1);
+                    TextView teleopsuccessdecrementlvl1 = v.findViewById(R.id.textview_success_lvl1);
                     teleopsuccessdecrementlvl1.setText(Integer.toString(teleop_success_lvl1));
                 }
                 break;
             case R.id.plusButton_fail_lvl1:
                 if(teleop_fail_lvl1 < 60){
                     teleop_fail_lvl1++;
-                    TextView teleopfailincrementlvl1 = (TextView) v.findViewById(R.id.textview_fail_lvl1);
+                    TextView teleopfailincrementlvl1 = v.findViewById(R.id.textview_fail_lvl1);
                     teleopfailincrementlvl1.setText(Integer.toString(teleop_fail_lvl1));
                 }
                 break;
             case R.id.minusButton_fail_lvl1:
                 if(teleop_fail_lvl1 > 0){
                     teleop_fail_lvl1--;
-                    TextView teleopfaildecrementlvl1 = (TextView) v.findViewById(R.id.textview_fail_lvl1);
+                    TextView teleopfaildecrementlvl1 = v.findViewById(R.id.textview_fail_lvl1);
                     teleopfaildecrementlvl1.setText(Integer.toString(teleop_fail_lvl1));
                 }
                 break;
             case R.id.plusButton_success_lvl2:
                 if(teleop_success_lvl2 < 60){
                     teleop_success_lvl2++;
-                    TextView teleopsuccessincrementlvl2 = (TextView) v.findViewById(R.id.textview_success_lvl2);
+                    TextView teleopsuccessincrementlvl2 = v.findViewById(R.id.textview_success_lvl2);
                     teleopsuccessincrementlvl2.setText(Integer.toString(teleop_success_lvl2));
                 }
                 break;
             case R.id.minusButton_success_lvl2:
                 if(teleop_success_lvl2 > 0){
                     teleop_success_lvl2--;
-                    TextView teleopsuccessdecrementlvl2 = (TextView) v.findViewById(R.id.textview_success_lvl2);
+                    TextView teleopsuccessdecrementlvl2 = v.findViewById(R.id.textview_success_lvl2);
                     teleopsuccessdecrementlvl2.setText(Integer.toString(teleop_success_lvl2));
                 }
                 break;
             case R.id.plusButton_fail_lvl2:
                 if(teleop_fail_lvl2 < 60){
                     teleop_fail_lvl2++;
-                    TextView teleopfailincrementlvl2 = (TextView) v.findViewById(R.id.textview_fail_lvl2);
+                    TextView teleopfailincrementlvl2 = v.findViewById(R.id.textview_fail_lvl2);
                     teleopfailincrementlvl2.setText(Integer.toString(teleop_fail_lvl2));
                 }
                 break;
             case R.id.minusButton_fail_lvl2:
                 if(teleop_fail_lvl2 > 0){
                     teleop_fail_lvl2--;
-                    TextView teleopfaildecrementlvl2 = (TextView) v.findViewById(R.id.textview_fail_lvl2);
+                    TextView teleopfaildecrementlvl2 = v.findViewById(R.id.textview_fail_lvl2);
                     teleopfaildecrementlvl2.setText(Integer.toString(teleop_fail_lvl2));
                 }
                 break;
             case R.id.plusButton_success_lvl3:
                 if(teleop_success_lvl3 < 60){
                     teleop_success_lvl3++;
-                    TextView tsilvl3 = (TextView) v.findViewById(R.id.textview_success_lvl3);
+                    TextView tsilvl3 = v.findViewById(R.id.textview_success_lvl3);
                     tsilvl3.setText(Integer.toString(teleop_success_lvl3));
                 }
                 break;
             case R.id.minusButton_success_lvl3:
                 if(teleop_success_lvl3 > 0){
                     teleop_success_lvl3--;
-                    TextView tsdlvl3 = (TextView) v.findViewById(R.id.textview_success_lvl3);
+                    TextView tsdlvl3 = v.findViewById(R.id.textview_success_lvl3);
                     tsdlvl3.setText(Integer.toString(teleop_success_lvl3));
                 }
                 break;
             case R.id.plusButton_fail_lvl3:
                 if(teleop_fail_lvl3 < 60){
                     teleop_fail_lvl3++;
-                    TextView tfilvl3 = (TextView) v.findViewById(R.id.textview_fail_lvl3);
+                    TextView tfilvl3 = v.findViewById(R.id.textview_fail_lvl3);
                     tfilvl3.setText(Integer.toString(teleop_fail_lvl3));
                 }
                 break;
             case R.id.minusButton_fail_lvl3:
                 if(teleop_fail_lvl3 > 0){
                     teleop_fail_lvl3--;
-                    TextView tfdlvl3 = (TextView) v.findViewById(R.id.textview_fail_lvl3);
+                    TextView tfdlvl3 = v.findViewById(R.id.textview_fail_lvl3);
                     tfdlvl3.setText(Integer.toString(teleop_fail_lvl3));
                 }
                 break;
             case R.id.rotation_time_increase:
                 if(rotation_time < 30){
                     rotation_time += 5;
-                    TextView rti = (TextView) v.findViewById(R.id.rotationtime_textview);
+                    TextView rti = v.findViewById(R.id.rotationtime_textview);
                     rti.setText(Integer.toString(rotation_time));
                 }
                 break;
             case R.id.rotate_time_decrease:
                 if(rotation_time > 0){
                     rotation_time -= 5;
-                    TextView rtd = (TextView) v.findViewById(R.id.rotationtime_textview);
+                    TextView rtd = v.findViewById(R.id.rotationtime_textview);
                     rtd.setText(Integer.toString(rotation_time));
                 }
                 break;
             case R.id.position_time_increment:
                 if(position_time < 30){
                     position_time += 5;
-                    TextView pti = (TextView) v.findViewById(R.id.position_time_textview);
+                    TextView pti = v.findViewById(R.id.position_time_textview);
                     pti.setText(Integer.toString(position_time));
                 }
                 break;
             case R.id.position_time_decrease:
                 if(position_time > 0){
                     position_time -= 5;
-                    TextView ptd = (TextView) v.findViewById(R.id.position_time_textview);
+                    TextView ptd = v.findViewById(R.id.position_time_textview);
                     ptd.setText(Integer.toString(position_time));
                 }
                 break;
             case R.id.cycles_increase_button:
                 if(cycles < 50){
                     cycles ++;
-                    TextView ci = (TextView) v.findViewById(R.id.cycles_textview);
+                    TextView ci = v.findViewById(R.id.cycles_textview);
                     ci.setText(Integer.toString(cycles));
                 }
                 break;
             case R.id.cycles_decrease_button:
                 if(cycles > 0){
                     cycles --;
-                    TextView cd = (TextView) v.findViewById(R.id.cycles_textview);
+                    TextView cd = v.findViewById(R.id.cycles_textview);
                     cd.setText(Integer.toString(cycles));
                 }
                 break;

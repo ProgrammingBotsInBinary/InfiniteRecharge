@@ -15,7 +15,7 @@ public class ServerMain extends AppCompatActivity {
         setContentView(R.layout.activity_server_main);
 
 
-        Button datacollection = (Button) findViewById(R.id.datacollection_button);
+        Button datacollection = findViewById(R.id.datacollection_button);
         datacollection.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -23,7 +23,7 @@ public class ServerMain extends AppCompatActivity {
                 ServerMain.this.startActivity(intent);
             }
         });
-        Button settings = (Button) findViewById(R.id.settings_activity_button);
+        Button settings = findViewById(R.id.settings_activity_button);
         settings.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

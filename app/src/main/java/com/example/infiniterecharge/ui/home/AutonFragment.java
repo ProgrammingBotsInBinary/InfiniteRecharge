@@ -31,40 +31,40 @@ public class AutonFragment extends Fragment implements View.OnClickListener {
                 ViewModelProviders.of(this).get(AutonViewModel.class);
         final View root = inflater.inflate(R.layout.fragment_auton, container, false);
 
-        Button plusbuttonlvl1 = (Button) root.findViewById(R.id.plusButton_lvl1);
+        Button plusbuttonlvl1 = root.findViewById(R.id.plusButton_lvl1);
         plusbuttonlvl1.setOnClickListener(this);
-        Button minusbuttonlvl1 = (Button) root.findViewById(R.id.minusButton_lvl1);
+        Button minusbuttonlvl1 = root.findViewById(R.id.minusButton_lvl1);
         minusbuttonlvl1.setOnClickListener(this);
-        Button plusbuttonlvl2 = (Button) root.findViewById(R.id.plusButton_lvl2);
+        Button plusbuttonlvl2 = root.findViewById(R.id.plusButton_lvl2);
         plusbuttonlvl2.setOnClickListener(this);
-        Button minusbuttonlvl2 = (Button) root.findViewById(R.id.minusButton_lvl2);
+        Button minusbuttonlvl2 = root.findViewById(R.id.minusButton_lvl2);
         minusbuttonlvl2.setOnClickListener(this);
-        Button plusbuttonlvl3 = (Button) root.findViewById(R.id.plusButton_lvl3);
+        Button plusbuttonlvl3 = root.findViewById(R.id.plusButton_lvl3);
         plusbuttonlvl3.setOnClickListener(this);
-        Button minusbuttonlvl3 = (Button) root.findViewById(R.id.minusButton_lvl3);
+        Button minusbuttonlvl3 = root.findViewById(R.id.minusButton_lvl3);
         minusbuttonlvl3.setOnClickListener(this);
 
-        TextView autonlvl1 = (TextView) root.findViewById(R.id.textview_lvl1);
+        TextView autonlvl1 = root.findViewById(R.id.textview_lvl1);
         autonlvl1.setText(Integer.toString(auton_lvl1));
-        TextView autonlvl2 = (TextView) root.findViewById(R.id.textview_lvl2);
+        TextView autonlvl2 = root.findViewById(R.id.textview_lvl2);
         autonlvl2.setText(Integer.toString(auton_lvl2));
-        TextView autonlvl3 = (TextView) root.findViewById(R.id.textview_lvl3);
+        TextView autonlvl3 = root.findViewById(R.id.textview_lvl3);
         autonlvl3.setText(Integer.toString(auton_lvl3));
         if(team_number != 0){
-            EditText teamnum = (EditText) root.findViewById(R.id.edittext_team_number);
+            EditText teamnum = root.findViewById(R.id.edittext_team_number);
             teamnum.setText(Integer.toString(team_number));
         }
         if(match_number != 0){
-            EditText matchnum = (EditText) root.findViewById(R.id.edittext_match_number);
+            EditText matchnum = root.findViewById(R.id.edittext_match_number);
             matchnum.setText(Integer.toString(match_number));
         }
 
-        RadioButton lineno = (RadioButton) root.findViewById(R.id.line_no);
-        RadioButton lineyes = (RadioButton) root.findViewById(R.id.line_yes);
+        RadioButton lineno = root.findViewById(R.id.line_no);
+        RadioButton lineyes = root.findViewById(R.id.line_yes);
 
-        RadioButton positionpowerport = (RadioButton) root.findViewById(R.id.powerport_button);
-        RadioButton loadingbay = (RadioButton) root.findViewById(R.id.loadingbay_button);
-        RadioButton far = (RadioButton) root.findViewById(R.id.far_button);
+        RadioButton positionpowerport = root.findViewById(R.id.powerport_button);
+        RadioButton loadingbay = root.findViewById(R.id.loadingbay_button);
+        RadioButton far = root.findViewById(R.id.far_button);
 
         switch (auton_line){
             case 2:
@@ -93,7 +93,7 @@ public class AutonFragment extends Fragment implements View.OnClickListener {
                 loadingbay.setChecked(false);
                 break;
         }
-        final EditText teamnumber = (EditText) root.findViewById(R.id.edittext_team_number);
+        final EditText teamnumber = root.findViewById(R.id.edittext_team_number);
         teamnumber.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -113,7 +113,7 @@ public class AutonFragment extends Fragment implements View.OnClickListener {
 
             }
         });
-        final EditText matchnumber = (EditText) root.findViewById(R.id.edittext_match_number);
+        final EditText matchnumber = root.findViewById(R.id.edittext_match_number);
         matchnumber.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) {
@@ -134,7 +134,7 @@ public class AutonFragment extends Fragment implements View.OnClickListener {
             }
         });
 
-        RadioGroup line = (RadioGroup) root.findViewById(R.id.radiogroup_line);
+        RadioGroup line = root.findViewById(R.id.radiogroup_line);
         line.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -148,7 +148,7 @@ public class AutonFragment extends Fragment implements View.OnClickListener {
                 }
             }
         });
-        RadioGroup position = (RadioGroup) root.findViewById(R.id.radiogroup_position);
+        RadioGroup position = root.findViewById(R.id.radiogroup_position);
         position.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
@@ -180,42 +180,42 @@ public class AutonFragment extends Fragment implements View.OnClickListener {
             case R.id.plusButton_lvl1:
                 if(auton_lvl1 < 20){
                     auton_lvl1++;
-                    TextView autonincrement = (TextView) v.findViewById(R.id.textview_lvl1);
+                    TextView autonincrement = v.findViewById(R.id.textview_lvl1);
                     autonincrement.setText(Integer.toString(auton_lvl1));
                 }
                 break;
             case R.id.minusButton_lvl1:
                 if(auton_lvl1 > 0){
                     auton_lvl1--;
-                    TextView autondecrement = (TextView) v.findViewById(R.id.textview_lvl1);
+                    TextView autondecrement = v.findViewById(R.id.textview_lvl1);
                     autondecrement.setText(Integer.toString(auton_lvl1));
                 }
                 break;
             case R.id.plusButton_lvl2:
                 if(auton_lvl2 < 20){
                     auton_lvl2++;
-                    TextView autonlvl1increment = (TextView) v.findViewById(R.id.textview_lvl2);
+                    TextView autonlvl1increment = v.findViewById(R.id.textview_lvl2);
                     autonlvl1increment.setText(Integer.toString(auton_lvl2));
                 }
                 break;
             case R.id.minusButton_lvl2:
                 if(auton_lvl2 > 0){
                     auton_lvl2--;
-                    TextView autonlvl2decrement = (TextView) v.findViewById(R.id.textview_lvl2);
+                    TextView autonlvl2decrement = v.findViewById(R.id.textview_lvl2);
                     autonlvl2decrement.setText(Integer.toString(auton_lvl2));
                 }
                 break;
             case R.id.plusButton_lvl3:
                 if(auton_lvl3 < 20){
                     auton_lvl3++;
-                    TextView autonlvl3increment = (TextView) v.findViewById(R.id.textview_lvl3);
+                    TextView autonlvl3increment = v.findViewById(R.id.textview_lvl3);
                     autonlvl3increment.setText(Integer.toString(auton_lvl3));
                 }
                 break;
             case R.id.minusButton_lvl3:
                 if(auton_lvl3 > 0){
                     auton_lvl3--;
-                    TextView autonlvl3decrement = (TextView) v.findViewById(R.id.textview_lvl3);
+                    TextView autonlvl3decrement = v.findViewById(R.id.textview_lvl3);
                     autonlvl3decrement.setText(Integer.toString(auton_lvl3));
                 }
                 break;

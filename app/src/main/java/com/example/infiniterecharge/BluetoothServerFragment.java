@@ -138,11 +138,11 @@ public class BluetoothServerFragment extends Fragment {
 
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
-        mConversationView = (ListView) view.findViewById(R.id.in);
-        mOutEditText = (EditText) view.findViewById(R.id.edit_text_out);
-        mSendButton = (Button) view.findViewById(R.id.button_send);
-        mConnectButton = (Button) view.findViewById(R.id.button_connect);
-        mDiscoverButton = (Button) view.findViewById(R.id.button_discoverable);
+        mConversationView = view.findViewById(R.id.in);
+        mOutEditText = view.findViewById(R.id.edit_text_out);
+        mSendButton = view.findViewById(R.id.button_send);
+        mConnectButton = view.findViewById(R.id.button_connect);
+        mDiscoverButton = view.findViewById(R.id.button_discoverable);
 
     }
 

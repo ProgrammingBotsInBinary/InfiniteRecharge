@@ -15,7 +15,7 @@ public class Settings extends AppCompatActivity {
 
         final DbHelper myDb = new DbHelper(this);
 
-        Button deletedb = (Button) findViewById(R.id.delete_db_button);
+        Button deletedb = findViewById(R.id.delete_db_button);
         deletedb.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

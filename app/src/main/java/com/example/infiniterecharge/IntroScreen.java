@@ -15,7 +15,7 @@ public class IntroScreen extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_intro_screen);
 
-        Button client = (Button) findViewById(R.id.client_button);
+        Button client = findViewById(R.id.client_button);
         client.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -23,7 +23,7 @@ public class IntroScreen extends AppCompatActivity {
                 IntroScreen.this.startActivity(intent);
             }
         });
-        Button server = (Button) findViewById(R.id.server_button);
+        Button server = findViewById(R.id.server_button);
         server.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

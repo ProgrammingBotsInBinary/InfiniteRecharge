@@ -16,8 +16,8 @@ public class ServerLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_server_login);
 
-        final EditText password = (EditText) findViewById(R.id.edittext_password);
-        Button submitbtn = (Button) findViewById(R.id.login_submit_button);
+        final EditText password = findViewById(R.id.edittext_password);
+        Button submitbtn = findViewById(R.id.login_submit_button);
         submitbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
