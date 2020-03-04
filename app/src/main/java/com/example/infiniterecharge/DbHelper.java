@@ -5,6 +5,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
+import android.util.Log;
+
 import static com.example.infiniterecharge.Variables.*;
 
 import androidx.annotation.Nullable;
@@ -79,5 +81,13 @@ public class DbHelper extends SQLiteOpenHelper {
         SQLiteDatabase db = this.getWritableDatabase();
         Cursor res = db.rawQuery("select * from " + THE_NAME,null);
         return res;
+    }
+    public void deleteRow (int teamNum, int matchNum){
+        SQLiteDatabase db = this.getWritableDatabase();
+        String query = "delete" + " from " + THE_NAME +
+                " where " + Col1 + " = " + teamNum + " and " + Col2 + " = " + matchNum;
+        Cursor cur = db.rawQuery(query, null);
+        Log.d("Query :", query);
+        Log.d("Deleting Row", Integer.toString(cur.getCount()));
     }
 }
