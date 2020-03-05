@@ -54,7 +54,7 @@ public class Variables {
     public static final String Col22 = "Notes";
 
 
-    public static final String delimiter = "<>";
+    public static final String delimiter = "<";
 
 
 

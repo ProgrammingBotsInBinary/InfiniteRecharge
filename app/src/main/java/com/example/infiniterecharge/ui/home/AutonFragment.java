@@ -64,6 +64,7 @@ public class AutonFragment extends Fragment implements View.OnClickListener {
 
         RadioButton positionpowerport = root.findViewById(R.id.powerport_button);
         RadioButton loadingbay = root.findViewById(R.id.loadingbay_button);
+        RadioButton trench = root.findViewById(R.id.trench_button);
         RadioButton far = root.findViewById(R.id.far_button);
 
         switch (auton_line){
@@ -80,15 +81,24 @@ public class AutonFragment extends Fragment implements View.OnClickListener {
             case 1:
                 positionpowerport.setChecked(true);
                 loadingbay.setChecked(false);
+                trench.setChecked(false);
                 far.setChecked(false);
                 break;
             case 2:
                 loadingbay.setChecked(true);
                 positionpowerport.setChecked(false);
+                trench.setChecked(false);
                 far.setChecked(false);
                 break;
             case 3:
+                trench.setChecked(true);
+                positionpowerport.setChecked(false);
+                loadingbay.setChecked(false);
+                far.setChecked(false);
+                break;
+            case 4:
                 far.setChecked(true);
+                trench.setChecked(false);
                 positionpowerport.setChecked(false);
                 loadingbay.setChecked(false);
                 break;
@@ -159,8 +169,11 @@ public class AutonFragment extends Fragment implements View.OnClickListener {
                     case R.id.loadingbay_button:
                         auton_position = 2;
                         break;
-                    case R.id.far_button:
+                    case R.id.trench_button:
                         auton_position = 3;
+                        break;
+                    case R.id.far_button:
+                        auton_position = 4;
                         break;
                 }
             }

@@ -32,10 +32,10 @@ public class NotesFragment extends Fragment {
                 ViewModelProviders.of(this).get(NotesViewModel.class);
         View root = inflater.inflate(R.layout.fragment_notes, container, false);
         if(notes != "None"){
-            EditText note = (EditText) root.findViewById(R.id.edittext_notes);
+            EditText note = root.findViewById(R.id.edittext_notes);
             note.setText(notes);
         }
-        Button introscreen = (Button) root.findViewById(R.id.intro_button);
+        Button introscreen = root.findViewById(R.id.intro_button);
         introscreen.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -44,7 +44,7 @@ public class NotesFragment extends Fragment {
             }
         });
 
-        final EditText notestext = (EditText) root.findViewById(R.id.edittext_notes);
+        final EditText notestext = root.findViewById(R.id.edittext_notes);
         notestext.addTextChangedListener(new TextWatcher() {
             @Override
             public void beforeTextChanged(CharSequence s, int start, int count, int after) { }
@@ -55,7 +55,9 @@ public class NotesFragment extends Fragment {
                 }
             }
             @Override
-            public void afterTextChanged(Editable s) { }
+            public void afterTextChanged(Editable s) {
+                notes = s.toString().replace(delimiter, " ");
+            }
         });
         return root;
     }
