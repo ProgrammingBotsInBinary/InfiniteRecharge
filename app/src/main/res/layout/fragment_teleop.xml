@@ -71,8 +71,7 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/header_teleop_lvl1"
         app:layout_constraintTop_toBottomOf="@id/header_teleop_lvl1"
-        app:layout_constraintVertical_bias="0.0"
-        />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/sf_lvl2"
@@ -96,38 +95,35 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@id/header_teleop_lvl3"
         app:layout_constraintTop_toBottomOf="@id/header_teleop_lvl3"
-        app:layout_constraintVertical_bias="0.0"
-        />
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/plusButton_success_lvl1"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="+"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/textview_success_lvl1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sf_lvl1"
-        app:layout_constraintVertical_chainStyle="packed"
         app:layout_constraintVertical_bias=".0"
-        />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <Button
         android:id="@+id/minusButton_success_lvl1"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="-"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/textview_success_lvl1"
-        />
+        app:layout_constraintTop_toBottomOf="@id/textview_success_lvl1" />
 
     <TextView
         android:id="@+id/textview_success_lvl1"
@@ -147,16 +143,15 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="+"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/textview_fail_lvl1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sf_lvl1"
         app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintVertical_chainStyle="packed"
-        />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/textview_fail_lvl1"
@@ -177,8 +172,8 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="-"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.3"
@@ -191,16 +186,15 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="+"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/textview_success_lvl2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sf_lvl2"
         app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintVertical_chainStyle="packed"
-        />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/textview_success_lvl2"
@@ -221,8 +215,8 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="-"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
@@ -235,15 +229,15 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="+"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/textview_fail_lvl2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sf_lvl2"
         app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintVertical_chainStyle="packed"/>
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/textview_fail_lvl2"
@@ -264,8 +258,8 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="-"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.3"
@@ -278,16 +272,15 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="+"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/textview_success_lvl3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sf_lvl3"
         app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintVertical_chainStyle="packed"
-        />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/textview_success_lvl3"
@@ -308,8 +301,8 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="-"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
@@ -322,16 +315,15 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="+"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toTopOf="@id/textview_fail_lvl3"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/sf_lvl3"
         app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintVertical_chainStyle="packed"
-        />
+        app:layout_constraintVertical_chainStyle="packed" />
 
     <TextView
         android:id="@+id/textview_fail_lvl3"
@@ -352,8 +344,8 @@
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="-"
-        android:textSize="20sp"
         android:textAlignment="center"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.3"
@@ -370,8 +362,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/header_rotation"
         app:layout_constraintTop_toBottomOf="@id/header_rotation"
-        app:layout_constraintVertical_bias="0.0"
-        >
+        app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
             android:id="@+id/rotation_yes"
@@ -395,8 +386,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.02" />
 
@@ -409,8 +400,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@id/rotationtime_textview"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -423,8 +414,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="@id/header_position"
         app:layout_constraintTop_toBottomOf="@id/header_position"
-        app:layout_constraintVertical_bias="0.0"
-        >
+        app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
             android:id="@+id/position_yes"
@@ -449,11 +439,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.67"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@id/position_time_textview"
-        app:layout_constraintVertical_bias="0.0"
-        />
+        app:layout_constraintVertical_bias="0.0" />
 
     <RadioGroup
         android:id="@+id/radiogroup_endgame"
@@ -461,11 +450,10 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/header_endgame"
+        app:layout_constraintHorizontal_bias=".1"
         app:layout_constraintStart_toStartOf="@id/header_endgame"
         app:layout_constraintTop_toBottomOf="@id/header_endgame"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_bias=".1"
-        >
+        app:layout_constraintVertical_bias="0.0">
 
         <RadioButton
             android:id="@+id/endgame_hang"
@@ -494,11 +482,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/rotationtime_textview"
         app:layout_constraintHorizontal_bias="0.3"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/rotation_time_header"
         app:layout_constraintTop_toBottomOf="@id/rotation_time_header"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/rotationtime_textview"
@@ -524,7 +511,7 @@
         app:layout_constraintHorizontal_bias="0.927"
         app:layout_constraintStart_toEndOf="@id/rotationtime_textview"
         app:layout_constraintTop_toBottomOf="@id/rotation_time_header"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintVertical_bias="0.0" />
 
     <Button
         android:id="@+id/position_time_decrease"
@@ -534,10 +521,10 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/position_time_textview"
         app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/position_time_header"
         app:layout_constraintTop_toBottomOf="@id/position_time_header"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_chainStyle="packed"/>
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/position_time_textview"
@@ -588,10 +575,11 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@id/header_position"
+        app:layout_constraintHorizontal_bias="0.9"
         app:layout_constraintStart_toEndOf="@id/radiogroup_position"
         app:layout_constraintTop_toBottomOf="@id/header_position"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintVertical_bias="0.0"/>
+        app:layout_constraintVertical_bias="0.0" />
+
     <TextView
         android:id="@+id/header_cycles"
         android:layout_width="wrap_content"
@@ -601,8 +589,8 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.9"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@id/guideline"
         app:layout_constraintTop_toBottomOf="@id/radiogroup_endgame"
         app:layout_constraintVertical_bias="0.0" />
 
@@ -614,19 +602,18 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/cycles_textview"
         app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="@id/header_cycles"
         app:layout_constraintTop_toBottomOf="@id/header_cycles"
-        app:layout_constraintVertical_bias="0.0"
-        app:layout_constraintHorizontal_chainStyle="packed"
-        />
+        app:layout_constraintVertical_bias="0.0" />
 
     <TextView
         android:id="@+id/cycles_textview"
         android:layout_width="45dp"
         android:layout_height="45dp"
         android:text="0"
-        android:textSize="30sp"
         android:textAlignment="center"
+        android:textSize="30sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/cycles_increase_button"
         app:layout_constraintHorizontal_bias="0.675"
@@ -645,81 +632,93 @@
         app:layout_constraintStart_toEndOf="@id/cycles_textview"
         app:layout_constraintTop_toBottomOf="@id/header_cycles"
         app:layout_constraintVertical_bias="0.0" />
-    <TextView
-        android:id="@+id/header_played_defense"
-        android:layout_width="wrap_content"
+
+    <Switch
+        android:id="@+id/switch_defenseplayed"
+        android:layout_width="140dp"
         android:layout_height="wrap_content"
-        android:text="Played Defense?"
-        android:textSize="20sp"
-        android:textStyle="bold"
+        android:text="Played Defense? "
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.81"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/cycles_textview"
-        app:layout_constraintVertical_bias="0.0" />
-
-    <RadioGroup
-        android:id="@+id/radiogroup_defenseplayed"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/header_played_defense"
-        app:layout_constraintStart_toStartOf="@id/header_played_defense"
-        app:layout_constraintTop_toBottomOf="@id/header_played_defense"
-        app:layout_constraintVertical_bias="0.0"
         app:layout_constraintHorizontal_bias="0.1"
-        >
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/cycles_textview"
+        app:layout_constraintVertical_bias="0.0">
 
-        <RadioButton
-            android:id="@+id/defense_played_yes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Yes" />
+    </Switch>
 
-        <RadioButton
-            android:id="@+id/defense_played_no"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="No" />
-    </RadioGroup>
-
-    <TextView
-        android:id="@+id/header_defended"
-        android:layout_width="200dp"
+    <Switch
+        android:id="@+id/switch_defended"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
-        android:text="Was defense played on them?"
-        android:textSize="18sp"
-        android:textStyle="bold"
+        android:text="Was Defense Played on Them? "
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.94"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/radiogroup_defenseplayed"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/switch_defenseplayed"
+        app:layout_constraintVertical_bias="0.05"></Switch>
 
-    <RadioGroup
-        android:id="@+id/radiogroup_defended"
+    <Switch
+        android:id="@+id/switch_level"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Switch Level? "
+        android:textSize="22sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@id/header_defended"
-        app:layout_constraintStart_toStartOf="@id/header_defended"
-        app:layout_constraintTop_toBottomOf="@id/header_defended"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
-        app:layout_constraintVertical_bias="0.0" >
+        app:layout_constraintStart_toStartOf="@id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/switch_defended"
+        app:layout_constraintVertical_bias="0.05" />
 
-        <RadioButton
-            android:id="@+id/defense_played_on_yes"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Yes" />
+    <TextView
+        android:id="@+id/defense_played_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:text="No"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/switch_defenseplayed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/switch_defenseplayed"
+        app:layout_constraintTop_toTopOf="@id/switch_defenseplayed" />
 
-        <RadioButton
-            android:id="@+id/defense_played_on_no"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="No" />
-    </RadioGroup>
+    <TextView
+        android:id="@+id/defended_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_defended"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/switch_defended"
+        app:layout_constraintTop_toTopOf="@+id/switch_defended" />
+
+    <TextView
+        android:id="@+id/switch_level_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="No"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/switch_level"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toEndOf="@+id/switch_level"
+        app:layout_constraintTop_toTopOf="@+id/switch_level" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="193dp" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

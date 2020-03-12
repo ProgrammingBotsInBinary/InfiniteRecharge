@@ -12,12 +12,15 @@
         android:ems="10"
         android:gravity="start|top"
         android:inputType="textMultiLine"
+        android:digits="abcdefghijklmnopqrstuvwxyz1234567890,.'"
+        android:maxLength="120"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.072"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/header_notes"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        />
 
     <TextView
         android:id="@+id/header_notes"

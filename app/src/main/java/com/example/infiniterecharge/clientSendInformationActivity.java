@@ -36,7 +36,7 @@ public class clientSendInformationActivity extends AppCompatActivity {
         //If left 0, the first column/id should autoincrement
         myDb.insertData(team_number, match_number, auton_lvl1, auton_lvl2, auton_lvl3, auton_line, auton_position,
                 teleop_success_lvl1, teleop_success_lvl2, teleop_success_lvl3, teleop_fail_lvl1, teleop_fail_lvl2, teleop_fail_lvl3,
-                rotation_control, position_control, endgame_int, rotation_time, position_time, cycles, defense_played, defense_played_on, notes);
+                rotation_control, position_control, endgame_int, rotation_time, position_time, cycles, defense_played, defense_played_on, level, notes);
 
     }
 

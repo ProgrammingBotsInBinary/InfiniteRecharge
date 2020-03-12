@@ -10,17 +10,13 @@ import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
 
-import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
-import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import static com.example.infiniterecharge.Variables.*;
 
-import com.example.infiniterecharge.DataCollectionActivity;
 import com.example.infiniterecharge.IntroScreen;
 import com.example.infiniterecharge.R;
-import com.example.infiniterecharge.ServerMain;
 
 public class NotesFragment extends Fragment {
 

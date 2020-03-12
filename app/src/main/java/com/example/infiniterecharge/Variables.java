@@ -23,6 +23,7 @@ public class Variables {
     public static int cycles = 0;
     public static int defense_played = 0;
     public static int defense_played_on = 0;
+    public static int level = 0;
     public static String notes = "None";
 
     public static int state = -1;
@@ -51,7 +52,8 @@ public class Variables {
     public static final String Col19 = "cycles";
     public static final String Col20 = "played_defense";
     public static final String Col21 = "defense_played_on";
-    public static final String Col22 = "Notes";
+    public static final String Col22 = "level";
+    public static final String Col23 = "Notes";
 
 
     public static final String delimiter = "<";

@@ -8,10 +8,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.annotation.NonNull;
@@ -20,10 +21,7 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import static com.example.infiniterecharge.Variables.*;
 
-import com.example.infiniterecharge.DirectWifi;
-import com.example.infiniterecharge.MainActivity;
 import com.example.infiniterecharge.R;
-import com.example.infiniterecharge.SendActivity;
 import com.example.infiniterecharge.clientSendInformationActivity;
 
 public class TeleopFragment extends Fragment implements View.OnClickListener {
@@ -101,10 +99,9 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
         RadioButton endgamehang = root.findViewById(R.id.endgame_hang);
         RadioButton endgamepark = root.findViewById(R.id.endgame_park);
         RadioButton endgameneither = root.findViewById(R.id.endgame_neither);
-        RadioButton playeddefenseyes = root.findViewById(R.id.defense_played_yes);
-        RadioButton playeddefenseno = root.findViewById(R.id.defense_played_no);
-        RadioButton defenseplayedonyes = root.findViewById(R.id.defense_played_on_yes);
-        RadioButton defenseplayedonno = root.findViewById(R.id.defense_played_on_no);
+        Switch defenseplayed = root.findViewById(R.id.switch_defenseplayed);
+        Switch defended = root.findViewById(R.id.switch_defended);
+        Switch level = root.findViewById(R.id.switch_level);
 
         Button sendactivity = root.findViewById(R.id.sendactivity_button);
         sendactivity.setOnClickListener(new View.OnClickListener() {
@@ -115,24 +112,20 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
             }
         });
 
-        switch(defense_played){
-            case 2:
-                playeddefenseyes.setChecked(true);
-                playeddefenseno.setChecked(false);
+        switch (defense_played){
+            case 0:
+                defenseplayed.setChecked(false);
                 break;
             case 1:
-                playeddefenseno.setChecked(true);
-                playeddefenseyes.setChecked(false);
+                defenseplayed.setChecked(true);
                 break;
         }
         switch (defense_played_on){
-            case 2:
-                defenseplayedonyes.setChecked(true);
-                defenseplayedonno.setChecked(false);
+            case 0:
+                defended.setChecked(false);
                 break;
             case 1:
-                defenseplayedonno.setChecked(true);
-                defenseplayedonyes.setChecked(false);
+                defended.setChecked(true);
                 break;
         }
         switch (rotation_control){
@@ -172,31 +165,36 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
                 endgamepark.setChecked(false);
                 break;
         }
-        RadioGroup playeddef = root.findViewById(R.id.radiogroup_defenseplayed);
-        playeddef.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        defenseplayed.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch (checkedId){
-                    case R.id.defense_played_yes:
-                        defense_played = 2;
-                        break;
-                    case R.id.defense_played_no:
-                        defense_played = 1;
-                        break;
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    defense_played = 1;
+                }
+                else{
+                    defense_played = 0;
                 }
             }
         });
-        RadioGroup defplayedon = root.findViewById(R.id.radiogroup_defended);
-        defplayedon.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+        defended.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
-            public void onCheckedChanged(RadioGroup group, int checkedId) {
-                switch (checkedId){
-                    case R.id.defense_played_on_yes:
-                        defense_played_on = 2;
-                        break;
-                    case R.id.defense_played_on_no:
-                        defense_played_on = 1;
-                        break;
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    defense_played_on = 1;
+                }
+                else{
+                    defense_played_on = 0;
+                }
+            }
+        });
+        level.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+
+                }
+                else{
+
                 }
             }
         });

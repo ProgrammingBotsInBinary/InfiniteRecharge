@@ -258,7 +258,8 @@ public class BluetoothServerFragment extends Fragment {
                             cur.getString(cur.getColumnIndex(Col19)) + delimiter +
                             cur.getString(cur.getColumnIndex(Col20)) + delimiter +
                             cur.getString(cur.getColumnIndex(Col21)) + delimiter +
-                            cur.getString(cur.getColumnIndex(Col22));
+                            cur.getString(cur.getColumnIndex(Col22)) + delimiter +
+                            cur.getString(cur.getColumnIndex(Col23));
 
                 }
                 else
@@ -394,7 +395,8 @@ public class BluetoothServerFragment extends Fragment {
                                 "Cycles: " + display.get(18) + "\n" +
                                 "Def. Played : " + display.get(19) + "\n" +
                                 "Def. Played On : " + display.get(20) + "\n" +
-                                "Notes: " + display.get(21) + "\n";
+                                "Level : " + display.get(21) + "\n" +
+                                "Notes: " + display.get(22) + "\n";
 
                         mConversationArrayAdapter.add(mConnectedDeviceName + ":  " + displayMessage);
 
@@ -407,7 +409,7 @@ public class BluetoothServerFragment extends Fragment {
                                 Integer.parseInt(received.get(8)), Integer.parseInt(received.get(9)), Integer.parseInt(received.get(10)), Integer.parseInt(received.get(11)),
                                 Integer.parseInt(received.get(12)), Integer.parseInt(received.get(13)), Integer.parseInt(received.get(14)), Integer.parseInt(received.get(15)),
                                 Integer.parseInt(received.get(16)), Integer.parseInt(received.get(17)), Integer.parseInt(received.get(18)), Integer.parseInt(received.get(19)),
-                                Integer.parseInt(received.get(20)), received.get(21));
+                                Integer.parseInt(received.get(20)),Integer.parseInt(received.get(21)), received.get(22));
                         ;
                     }
 
@@ -427,20 +429,20 @@ public class BluetoothServerFragment extends Fragment {
                         DbHelper myDb = new DbHelper(getContext());
                         List<String> received = display;
                         Log.d("Received size ",  Integer.toString(received.size()));
-                        for(int i = 0; i < (received.size()/22); i++){
-                            Log.d("Entry 1: ", Integer.toString((i*22) + 1));
-                            Log.d("Entry 2: ", Integer.toString((i*22) + 2));
-                            Log.d("Entry 3: ", Integer.toString((i*22) + 3));
-                            myDb.insertData(Integer.parseInt(received.get((i*22)+ 1)), Integer.parseInt(received.get((i*22) + 2)), Integer.parseInt(received.get((i*22) + 3)),
-                                    Integer.parseInt(received.get((i*22) + 4)), Integer.parseInt(received.get((i*22) + 5)), Integer.parseInt(received.get((i*22) + 6)),
-                                    Integer.parseInt(received.get((i*22) + 7)),
-                                    Integer.parseInt(received.get((i*22) + 8)), Integer.parseInt(received.get((i*22) + 9)), Integer.parseInt(received.get((i*22) + 10)),
-                                    Integer.parseInt(received.get((i*22) + 11)),
-                                    Integer.parseInt(received.get((i*22) + 12)), Integer.parseInt(received.get((i*22) + 13)), Integer.parseInt(received.get((i*22) + 14)),
-                                    Integer.parseInt(received.get((i*22) + 15)),
-                                    Integer.parseInt(received.get((i*22) + 16)), Integer.parseInt(received.get((i*22) + 17)), Integer.parseInt(received.get((i*22) + 18)),
-                                    Integer.parseInt(received.get((i*22) + 19)), Integer.parseInt(received.get(i*22) + 20), Integer.parseInt(received.get(i*22) + 21),
-                                    received.get((i*22) + 22));
+                        for(int i = 0; i < (received.size()/23); i++){
+                            Log.d("Entry 1: ", Integer.toString((i*23) + 1));
+                            Log.d("Entry 2: ", Integer.toString((i*23) + 2));
+                            Log.d("Entry 3: ", Integer.toString((i*23) + 3));
+                            myDb.insertData(Integer.parseInt(received.get((i*23)+ 1)), Integer.parseInt(received.get((i*23) + 2)), Integer.parseInt(received.get((i*23) + 3)),
+                                    Integer.parseInt(received.get((i*23) + 4)), Integer.parseInt(received.get((i*23) + 5)), Integer.parseInt(received.get((i*23) + 6)),
+                                    Integer.parseInt(received.get((i*23) + 7)),
+                                    Integer.parseInt(received.get((i*23) + 8)), Integer.parseInt(received.get((i*23) + 9)), Integer.parseInt(received.get((i*23) + 10)),
+                                    Integer.parseInt(received.get((i*23) + 11)),
+                                    Integer.parseInt(received.get((i*23) + 12)), Integer.parseInt(received.get((i*23) + 13)), Integer.parseInt(received.get((i*23) + 14)),
+                                    Integer.parseInt(received.get((i*23) + 15)),
+                                    Integer.parseInt(received.get((i*23) + 16)), Integer.parseInt(received.get((i*23) + 17)), Integer.parseInt(received.get((i*23) + 18)),
+                                    Integer.parseInt(received.get((i*23) + 19)), Integer.parseInt(received.get(i*23) + 20), Integer.parseInt(received.get(i*23) + 21),
+                                    Integer.parseInt(received.get((i*23) + 22)), received.get((i*22) + 23));
 
                         }
                         /*

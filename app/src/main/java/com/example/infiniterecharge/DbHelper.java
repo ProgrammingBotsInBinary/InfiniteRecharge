@@ -17,7 +17,7 @@ public class DbHelper extends SQLiteOpenHelper {
             + Col1 + " INTEGER, " + Col2 + " INTEGER, " + Col3 + " INTEGER, " + Col4 + " INTEGER, " + Col5 + " INTEGER, " +
             Col6 + " INTEGER, " + Col7 + " INTEGER, " + Col8 + " INTEGER, " + Col9 + " INTEGER, " + Col10 + " INTEGER, " + Col11 + " INTEGER, " +
             Col12 + " INTEGER, " + Col13 + " INTEGER, " + Col14 + " INTEGER, " + Col15 + " INTEGER, " + Col16 + " INTEGER, " + Col17 + " INTEGER, "
-        + Col18 + " INTEGER, " + Col19 + " INTEGER, " + Col20 + " INTEGER, " + Col21 + " INTEGER, " + Col22 + " TEXT)";
+        + Col18 + " INTEGER, " + Col19 + " INTEGER, " + Col20 + " INTEGER, " + Col21 + " INTEGER, " + Col22 + " INTEGER, "+ Col23 + " TEXT)";
 
 
 
@@ -44,7 +44,7 @@ public class DbHelper extends SQLiteOpenHelper {
     public boolean insertData(int teamnumber, int matchnumber, int autonlvl1, int autonlvl2, int autonlvl3, int autonline, int autonposition, int
                               teleopsuccesslvl1, int teleopsuccesslvl2, int teleopsuccesslvl3, int teleopfaillvl1, int teleopfaillvl2,
                               int teleopfaillvl3, int rotationcontrol, int positioncontrol, int endgamee,int rotationtime, int positiontime, int cycles,
-                               int defenseplayed, int defenseplayedon, String notess){
+                               int defenseplayed, int defenseplayedon, int lvl, String notess){
         SQLiteDatabase db = this.getWritableDatabase();
         ContentValues contentValues = new ContentValues();
         contentValues.put(Col1, teamnumber);
@@ -68,7 +68,8 @@ public class DbHelper extends SQLiteOpenHelper {
         contentValues.put(Col19, cycles);
         contentValues.put(Col20, defenseplayed);
         contentValues.put(Col21, defenseplayedon);
-        contentValues.put(Col22, notess);
+        contentValues.put(Col22, lvl);
+        contentValues.put(Col23, notess);
 
         long result = db.insert(THE_NAME,null, contentValues);
         if(result == -1)

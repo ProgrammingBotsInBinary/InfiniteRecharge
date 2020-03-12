@@ -63,7 +63,8 @@ public class SendActivity extends AppCompatActivity {
             public void onClick(View v) {
                 boolean check = myDb.insertData(team_number, match_number, auton_lvl1, auton_lvl2, auton_lvl3, auton_line, auton_position,
                         teleop_success_lvl1, teleop_success_lvl2, teleop_success_lvl3, teleop_fail_lvl1, teleop_fail_lvl2, teleop_fail_lvl3,
-                        rotation_control, position_control, endgame_int,rotation_time, position_time, cycles, defense_played, defense_played_on, notes);
+                        rotation_control, position_control, endgame_int,rotation_time, position_time, cycles, defense_played, defense_played_on,
+                        level, notes);
                 if(check){
                     Toast.makeText(SendActivity.this, "Data inserted", Toast.LENGTH_LONG).show();
                 }
@@ -103,7 +104,8 @@ public class SendActivity extends AppCompatActivity {
                     buffer.append("Rot. Time: " + res.getInt(17) + "\n");
                     buffer.append("Pos. Time: " + res.getInt(18) + "\n");
                     buffer.append("Cycles: " + res.getInt(19) + "\n");
-                    buffer.append("Notes: " + res.getInt(20) + "\n");
+                    buffer.append("Level: " + res.getInt(20) + "\n");
+                    buffer.append("Notes: " + res.getInt(21) + "\n");
                 }
                 showMessage("Data", buffer.toString());
             }

@@ -149,7 +149,7 @@ public class BluetoothChatFragment extends Fragment {
                 teleop_success_lvl2 + delimiter + teleop_success_lvl3 + delimiter + teleop_fail_lvl1 + delimiter + teleop_fail_lvl2 + delimiter +
                 teleop_fail_lvl3 + delimiter + rotation_control + delimiter + position_control + delimiter + endgame_int + delimiter +
                 rotation_time + delimiter + position_time + delimiter + cycles + delimiter + defense_played  + delimiter + defense_played_on + delimiter +
-                notes;
+                level + delimiter + notes;
 
         Log.d(TAG, toSend);
     }
