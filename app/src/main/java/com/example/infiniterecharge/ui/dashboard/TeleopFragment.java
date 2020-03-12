@@ -22,6 +22,7 @@ import androidx.lifecycle.ViewModelProviders;
 import static com.example.infiniterecharge.Variables.*;
 
 import com.example.infiniterecharge.R;
+import com.example.infiniterecharge.Variables;
 import com.example.infiniterecharge.clientSendInformationActivity;
 
 public class TeleopFragment extends Fragment implements View.OnClickListener {
@@ -91,6 +92,9 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
         positiontime.setText(Integer.toString(position_time));
         TextView numberofcycles = root.findViewById(R.id.cycles_textview);
         numberofcycles.setText(Integer.toString(cycles));
+        final TextView playeddef = root.findViewById(R.id.defense_played_textview);
+        final TextView defnded = root.findViewById(R.id.defended_textview);
+        final TextView lvl = root.findViewById(R.id.switch_level_textview);
 
         RadioButton rotation_yes = root.findViewById(R.id.rotation_yes);
         RadioButton rotation_no = root.findViewById(R.id.rotation_no);
@@ -101,7 +105,7 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
         RadioButton endgameneither = root.findViewById(R.id.endgame_neither);
         Switch defenseplayed = root.findViewById(R.id.switch_defenseplayed);
         Switch defended = root.findViewById(R.id.switch_defended);
-        Switch level = root.findViewById(R.id.switch_level);
+        Switch levelswitch = root.findViewById(R.id.switch_level);
 
         Button sendactivity = root.findViewById(R.id.sendactivity_button);
         sendactivity.setOnClickListener(new View.OnClickListener() {
@@ -115,17 +119,31 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
         switch (defense_played){
             case 0:
                 defenseplayed.setChecked(false);
+                playeddef.setText("No");
                 break;
             case 1:
                 defenseplayed.setChecked(true);
+                playeddef.setText("Yes");
                 break;
         }
         switch (defense_played_on){
             case 0:
                 defended.setChecked(false);
+                defnded.setText("No");
                 break;
             case 1:
                 defended.setChecked(true);
+                defnded.setText("Yes");
+                break;
+        }
+        switch (level){
+            case 0:
+                levelswitch.setChecked(false);
+                lvl.setText("No");
+                break;
+            case 1:
+                levelswitch.setChecked(true);
+                lvl.setText("Yes");
                 break;
         }
         switch (rotation_control){
@@ -170,9 +188,11 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
                     defense_played = 1;
+                    playeddef.setText("Yes");
                 }
                 else{
                     defense_played = 0;
+                    playeddef.setText("No");
                 }
             }
         });
@@ -181,20 +201,24 @@ public class TeleopFragment extends Fragment implements View.OnClickListener {
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
                     defense_played_on = 1;
+                    defnded.setText("Yes");
                 }
                 else{
                     defense_played_on = 0;
+                    defnded.setText("No");
                 }
             }
         });
-        level.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        levelswitch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if(isChecked){
-
+                    level = 1;
+                    lvl.setText("Yes");
                 }
                 else{
-
+                    level = 0;
+                    lvl.setText("No");
                 }
             }
         });

@@ -54,6 +54,7 @@ public class MainActivity extends AppCompatActivity {
         cycles = 0;
         defense_played = 0;
         defense_played_on = 0;
+        level = 0;
         notes = "None";
         input = "";
         toSend = "";
